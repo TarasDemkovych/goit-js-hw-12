@@ -31,14 +31,27 @@ main:has(.back-link) {
   text-align: center;
 }
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-}
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  margin-left: 8px;
+ display: none !important;
+  }
+  
+  button[name='load-more'] {
+    margin: 32px auto;
+    border-radius: 8px;
+  padding: 8px 16px;
+  width: 100px;;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  
+  }

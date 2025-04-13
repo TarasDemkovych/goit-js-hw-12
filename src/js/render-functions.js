@@ -4,6 +4,16 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 export const gallery = document.querySelector('.gallery');
 export const loader = document.querySelector('.loader');
 
+export const loadBtn = {
+  btn: document.querySelector('button[name="load-more"]'),
+  hideBtn() {
+    loadBtn.btn.classList.add("visually-hidden");
+  },
+  showBtn() {
+    loadBtn.btn.classList.remove("visually-hidden");
+  }
+};
+
 export function createMarkup(hits) {
   const markUp = hits
     .map(
@@ -48,7 +58,7 @@ export function createMarkup(hits) {
     )
     .join('');
 
-  gallery.innerHTML = markUp;
+  gallery.insertAdjacentHTML("beforeend", markUp);
   modal.refresh();
 }
 
