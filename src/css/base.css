@@ -40,7 +40,7 @@ main:has(.back-link) {
   color: #fff;
   border: none;
   margin-left: 8px;
- display: none !important;
+ display: none;
   }
   
   button[name='load-more'] {
